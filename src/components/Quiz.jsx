@@ -648,6 +648,9 @@ const Quiz = () => {
     <div className="quiz-container">
       {currentQuestionIndex < questions.length ? (
         <div className="question-section">
+        <h3>
+            Question {currentQuestionIndex + 1} of {questions.length}
+          </h3>
           <QuestionList
             question={questions[currentQuestionIndex].question}
             options={questions[currentQuestionIndex].options}
